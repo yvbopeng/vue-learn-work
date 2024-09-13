@@ -1,5 +1,5 @@
 import './assets/main.css'
-import "@/assets/font/fonst.css"
+import "@/assets/font/font.css"
 
 // main.ts
 import 'virtual:uno.css'

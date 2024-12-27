@@ -32,6 +32,13 @@ export default defineConfig({
   ],
   server: {
     port: 5187,
+    proxy: {
+      '/poetry-cors': {
+        target: 'https://v2.jinrishici.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/poetry-cors/, '')
+      }
+    }
   },
   resolve: {
     alias: {
